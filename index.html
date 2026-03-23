@@ -31,7 +31,7 @@
             margin-right: 20px;
         }
 
-        /* Contenedor de los 13 botones */
+        /* Contenedor de los botones */
         .contenedor-botones {
             display: flex;
             flex-wrap: wrap; /* Si no caben, se pasan al renglón de abajo */
@@ -90,107 +90,94 @@
             font-weight: bold;
             font-size: 18px;
         }
+
+        /* Estilo para el texto del decanato */
+        .texto-decanato {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            margin-right: auto; /* Este truco empuja los botones a la derecha */
+        }
     </style>
 </head>
 <body>
 
     <div class="cintillo">
-        <img src="logo-diocesis.png" alt="Diócesis de Aguascalientes" class="logo-diocesis">
+        <img src="Dio.png" alt="Diócesis de Aguascalientes" class="logo-diocesis">
+        
+        <div class="texto-decanato">Decanato Centro</div>
         
         <div class="contenedor-botones">
-            <button class="boton-nav" onclick="cambiarFlyer(event, 'dia1')" id="botonInicio">Día 1</button>
-            <button class="boton-nav" onclick="cambiarFlyer(event, 'dia2')">Día 2</button>
-            <button class="boton-nav" onclick="cambiarFlyer(event, 'dia3')">Día 3</button>
-            <button class="boton-nav" onclick="cambiarFlyer(event, 'dia4')">Día 4</button>
-            <button class="boton-nav" onclick="cambiarFlyer(event, 'dia5')">Día 5</button>
-            <button class="boton-nav" onclick="cambiarFlyer(event, 'dia6')">Día 6</button>
-            <button class="boton-nav" onclick="cambiarFlyer(event, 'dia7')">Día 7</button>
-            <button class="boton-nav" onclick="cambiarFlyer(event, 'dia8')">Día 8</button>
-            <button class="boton-nav" onclick="cambiarFlyer(event, 'dia9')">Día 9</button>
-            <button class="boton-nav" onclick="cambiarFlyer(event, 'dia10')">Día 10</button>
-            <button class="boton-nav" onclick="cambiarFlyer(event, 'dia11')">Día 11</button>
-            <button class="boton-nav" onclick="cambiarFlyer(event, 'dia12')">Día 12</button>
-            <button class="boton-nav" onclick="cambiarFlyer(event, 'dia13')">Día 13</button>
+            <button class="boton-nav" onclick="cambiarFlyer(event, 'dia1')" id="botonInicio">Señor de los Rayos</button>
+            <button class="boton-nav" onclick="cambiarFlyer(event, 'dia2')">Santuario de Guadalupe</button>
+            <button class="boton-nav" onclick="cambiarFlyer(event, 'dia3')">Sagrado Corazón</button>
+            <button class="boton-nav" onclick="cambiarFlyer(event, 'dia4')">San José</button>
+            <button class="boton-nav" onclick="cambiarFlyer(event, 'dia5')">San Juan Nepomuceno</button>
+            <button class="boton-nav" onclick="cambiarFlyer(event, 'dia6')">La Merced</button>
+            <button class="boton-nav" onclick="cambiarFlyer(event, 'dia7')">Nuestra Señora del Carmen</button>
+            <button class="boton-nav" onclick="cambiarFlyer(event, 'dia8')">San Antonio</button>
+            <button class="boton-nav" onclick="cambiarFlyer(event, 'dia9')">Señor del Encino</button>
+            <button class="boton-nav" onclick="cambiarFlyer(event, 'dia10')">Ave María</button>
+            <button class="boton-nav" onclick="cambiarFlyer(event, 'dia11')">Purísima Concepción de San Diego</button>
         </div>
     </div>
 
     <div id="dia1" class="area-flyer">
-        <img src="logo-parroquia.png" class="logo-parroquia" alt="Logo Parroquia">
-        <div class="nombre-parroquia">Nombre de tu Parroquia</div>
-        <img src="flyer-1.jpg" class="imagen-fondo" alt="Flyer Día 1">
+        <div class="nombre-parroquia">Capellanía del Señor de los Rayos</div>
+        <img src="Sr de los Rayos.jpeg" class="imagen-fondo" alt="Flyer Día 1">
     </div>
 
     <div id="dia2" class="area-flyer">
-        <img src="logo-parroquia.png" class="logo-parroquia" alt="Logo Parroquia">
-        <div class="nombre-parroquia">Nombre de tu Parroquia</div>
-        <img src="flyer-2.jpg" class="imagen-fondo" alt="Flyer Día 2">
+        <div class="nombre-parroquia">Parroquia de Nuestra Señora de Guadalupe</div>
+        <img src="Santuario de Guadalupe.jpeg" class="imagen-fondo" alt="Flyer Día 2">
     </div>
 
     <div id="dia3" class="area-flyer">
-        <img src="logo-parroquia.png" class="logo-parroquia" alt="Logo Parroquia">
-        <div class="nombre-parroquia">Nombre de tu Parroquia</div>
-        <img src="flyer-3.jpg" class="imagen-fondo" alt="Flyer Día 3">
+        <div class="nombre-parroquia">Templo Votivo del Sagrado Corazón</div>
+        <img src="Sagrado Corazon.jpeg" class="imagen-fondo" alt="Flyer Día 3">
     </div>
 
     <div id="dia4" class="area-flyer">
-        <img src="logo-parroquia.png" class="logo-parroquia" alt="Logo Parroquia">
-        <div class="nombre-parroquia">Nombre de tu Parroquia</div>
-        <img src="flyer-4.jpg" class="imagen-fondo" alt="Flyer Día 4">
+        <div class="nombre-parroquia">San José Centro</div>
+        <img src="San Jose.jpeg" class="imagen-fondo" alt="Flyer Día 4">
     </div>
 
     <div id="dia5" class="area-flyer">
-        <img src="logo-parroquia.png" class="logo-parroquia" alt="Logo Parroquia">
-        <div class="nombre-parroquia">Nombre de tu Parroquia</div>
-        <img src="flyer-5.jpg" class="imagen-fondo" alt="Flyer Día 5">
+        <div class="nombre-parroquia">Capellanía de San Juan Nepomuceno</div>
+        <img src="san juan nepomuceno.jpeg" class="imagen-fondo" alt="Flyer Día 5">
     </div>
 
     <div id="dia6" class="area-flyer">
-        <img src="logo-parroquia.png" class="logo-parroquia" alt="Logo Parroquia">
-        <div class="nombre-parroquia">Nombre de tu Parroquia</div>
-        <img src="flyer-6.jpg" class="imagen-fondo" alt="Flyer Día 6">
+        <div class="nombre-parroquia">Nuestra Señora del Rosario</div>
+        <img src="La merced.jpeg" class="imagen-fondo" alt="Flyer Día 6">
     </div>
 
     <div id="dia7" class="area-flyer">
-        <img src="logo-parroquia.png" class="logo-parroquia" alt="Logo Parroquia">
-        <div class="nombre-parroquia">Nombre de tu Parroquia</div>
-        <img src="flyer-7.jpg" class="imagen-fondo" alt="Flyer Día 7">
+        <div class="nombre-parroquia">Nuestra Señora del Carmen</div>
+        <img src="Nuestra señora del carme.jpeg" class="imagen-fondo" alt="Flyer Día 7">
     </div>
 
     <div id="dia8" class="area-flyer">
-        <img src="logo-parroquia.png" class="logo-parroquia" alt="Logo Parroquia">
-        <div class="nombre-parroquia">Nombre de tu Parroquia</div>
-        <img src="flyer-8.jpg" class="imagen-fondo" alt="Flyer Día 8">
+        <div class="nombre-parroquia">Capellanía de San Antonio</div>
+        <img src="San Antonio.jpeg" class="imagen-fondo" alt="Flyer Día 8">
     </div>
 
     <div id="dia9" class="area-flyer">
-        <img src="logo-parroquia.png" class="logo-parroquia" alt="Logo Parroquia">
-        <div class="nombre-parroquia">Nombre de tu Parroquia</div>
-        <img src="flyer-9.jpg" class="imagen-fondo" alt="Flyer Día 9">
+        <div class="nombre-parroquia">Señor del Encino</div>
+        <img src="El Señor del Encino.jpeg" class="imagen-fondo" alt="Flyer Día 9">
     </div>
 
     <div id="dia10" class="area-flyer">
-        <img src="logo-parroquia.png" class="logo-parroquia" alt="Logo Parroquia">
-        <div class="nombre-parroquia">Nombre de tu Parroquia</div>
-        <img src="flyer-10.jpg" class="imagen-fondo" alt="Flyer Día 10">
+        <div class="nombre-parroquia">Capellanía del Ave María</div>
+        <img src="ave maria.jpeg" class="imagen-fondo" alt="Flyer Día 10">
     </div>
 
     <div id="dia11" class="area-flyer">
-        <img src="logo-parroquia.png" class="logo-parroquia" alt="Logo Parroquia">
-        <div class="nombre-parroquia">Nombre de tu Parroquia</div>
-        <img src="flyer-11.jpg" class="imagen-fondo" alt="Flyer Día 11">
+         <div class="nombre-parroquia">Purísima Concepción de San Diego</div>
+        <img src="Tercera orden.jpg" class="imagen-fondo" alt="Flyer Día 11">
+        <img src="Tercera orden (2).jpg" class="imagen-fondo" alt="Flyer Día 11">
     </div>
 
-    <div id="dia12" class="area-flyer">
-        <img src="logo-parroquia.png" class="logo-parroquia" alt="Logo Parroquia">
-        <div class="nombre-parroquia">Nombre de tu Parroquia</div>
-        <img src="flyer-12.jpg" class="imagen-fondo" alt="Flyer Día 12">
-    </div>
-
-    <div id="dia13" class="area-flyer">
-        <img src="logo-parroquia.png" class="logo-parroquia" alt="Logo Parroquia">
-        <div class="nombre-parroquia">Nombre de tu Parroquia</div>
-        <img src="flyer-13.jpg" class="imagen-fondo" alt="Flyer Día 13">
-    </div>
 
     <script>
         function cambiarFlyer(evento, idFlyer) {
@@ -211,7 +198,7 @@
             evento.currentTarget.className += " activo";
         }
 
-        // Hacer que el "Día 1" aparezca automáticamente al abrir la página
+        // Hacer que la primera pestaña aparezca automáticamente al abrir la página
         document.getElementById("botonInicio").click();
     </script>
 
